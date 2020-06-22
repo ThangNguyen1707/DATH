@@ -7,9 +7,9 @@ import 'package:my_yoga_fl/widgets/asanas_list.dart';
 import 'package:my_yoga_fl/widgets/search_field.dart';
 import 'package:provider/provider.dart';
 
-import 'asana_screen.dart';
+import 'fitnessdetail_screen.dart';
 
-class AsanasScreen extends StatelessWidget {
+class FitnessScreen extends StatelessWidget {
   static const routeName = '/asanas';
 
   @override
@@ -96,7 +96,7 @@ class _AsanasScreenContentState extends State<_AsanasScreenContent> {
                 context,
                 MaterialPageRoute(
                   fullscreenDialog: true,
-                  builder: (context) => AsanaScreen(asana),
+                  builder: (context) => FitnessDetailScreen(asana),
                 ),
               ),
             ),

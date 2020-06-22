@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_yoga_fl/assets.dart';
 import 'package:my_yoga_fl/repository/classroom_repository.dart';
-import 'package:my_yoga_fl/screens/asanas_screen.dart';
+import 'package:my_yoga_fl/screens/fitness_screen.dart';
 import 'package:my_yoga_fl/screens/changelog_screen.dart';
 import 'package:my_yoga_fl/screens/classrooms_screen.dart';
 import 'package:my_yoga_fl/screens/player/login_screen.dart';
@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
                 appVersion: appVersion,
               ),
           ClassroomsScreen.routeName: (context) => ClassroomsScreen(),
-          AsanasScreen.routeName: (context) => AsanasScreen(),
+          FitnessScreen.routeName: (context) => FitnessScreen(),
         },
         theme: theme,
       ),
@@ -165,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Button(
                 'Fitness',
                 onTap: () {
-                  Navigator.pushNamed(context, AsanasScreen.routeName);
+                  Navigator.pushNamed(context, FitnessScreen.routeName);
                 },
               ),
             ),

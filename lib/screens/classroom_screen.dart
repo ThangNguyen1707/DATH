@@ -5,7 +5,7 @@ import 'package:mobx/mobx.dart';
 import 'package:my_yoga_fl/assets.dart';
 import 'package:my_yoga_fl/i18n/plural.dart';
 import 'package:my_yoga_fl/models/classroom_model.dart';
-import 'package:my_yoga_fl/screens/asana_screen.dart';
+import 'package:my_yoga_fl/screens/fitnessdetail_screen.dart';
 import 'package:my_yoga_fl/screens/new_classroom/new_classroom_screen.dart';
 import 'package:my_yoga_fl/screens/player/player_main_screen.dart';
 import 'package:my_yoga_fl/stores/asanas_store.dart';
@@ -207,7 +207,7 @@ class _ClassroomScreenContent extends StatelessWidget {
               hindiTitle: asana.hindiTitle,
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return AsanaScreen(asana);
+                  return FitnessDetailScreen(asana);
                 }));
               },
             ),

@@ -3,7 +3,7 @@ import 'package:my_yoga_fl/assets.dart';
 import 'package:my_yoga_fl/models/asana_model.dart';
 import 'package:my_yoga_fl/widgets/button.dart';
 
-class AsanaScreen extends StatelessWidget {
+class FitnessDetailScreen extends StatelessWidget {
    // TODO: Is it use anywhere?
   static const routeName = '/asana';
 
@@ -11,7 +11,7 @@ class AsanaScreen extends StatelessWidget {
   final AsanaModel _asanaModel;
 
   // TODO: Key argument for constructor?
-  const AsanaScreen(this._asanaModel);
+  const FitnessDetailScreen(this._asanaModel);
 
 
   @override

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:my_yoga_fl/assets.dart';
 import 'package:my_yoga_fl/models/asana_model.dart';
-import 'package:my_yoga_fl/screens/asana_screen.dart';
+import 'package:my_yoga_fl/screens/fitnessdetail_screen.dart';
 import 'package:my_yoga_fl/screens/new_classroom/new_classroom_screen.dart';
 import 'package:my_yoga_fl/stores/asanas_store.dart';
 import 'package:my_yoga_fl/stores/new_classroom_store.dart';
@@ -110,7 +110,7 @@ class _AllAsanasListTabView extends StatelessWidget {
             onAsanaAdd: () => newClassroomStore.addRoutineToClassroomWithAsana(asana),
             onTap: () => Navigator.of(context).push(MaterialPageRoute(
               fullscreenDialog: true,
-              builder: (_) => AsanaScreen(asana),
+              builder: (_) => FitnessDetailScreen(asana),
             )),
           ),
         );
@@ -148,7 +148,7 @@ class _ClassroomRoutinesListTabView extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   fullscreenDialog: true,
-                  builder: (_) => AsanaScreen(asanasStore.asanas[routine.asanaUniqueName]),
+                  builder: (_) => FitnessDetailScreen(asanasStore.asanas[routine.asanaUniqueName]),
                 ),
               ),
               onDurationTap: () {
