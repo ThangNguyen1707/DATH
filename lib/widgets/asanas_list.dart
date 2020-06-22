@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_yoga_fl/assets.dart';
 import 'package:my_yoga_fl/models/asana_model.dart';
-import 'package:my_yoga_fl/screens/asana_screen.dart';
+import 'package:my_yoga_fl/screens/fitnessdetail_screen.dart';
 
 // TODO: Delete
 class AsanasList extends StatelessWidget {
@@ -39,7 +39,7 @@ class AsanasList extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AsanaScreen(asana)),
+                      MaterialPageRoute(builder: (context) => FitnessDetailScreen(asana)),
                     );
                   },
                 ),
